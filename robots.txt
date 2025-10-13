@@ -1,0 +1,26 @@
+# robots.txt for agency damah
+# 담아 에이전시 - 프로모션 전문
+
+User-agent: *
+Allow: /
+
+# Naver Bot
+User-agent: Yeti
+Allow: /
+
+User-agent: NaverBot
+Allow: /
+
+# Google Bot
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Block admin and private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://www.agencydamah.com/sitemap.xml
