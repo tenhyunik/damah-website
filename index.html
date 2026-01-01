@@ -312,6 +312,26 @@
             object-fit: cover;
         }
 
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .seo-intro {
+            max-width: 900px;
+            margin: 80px auto 0;
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: #1e5166;
+        }
+
         /* 모바일에서 영상이 잘리지 않도록 처리 */
         @media (max-width: 768px) {
             .hero-video {
@@ -1033,6 +1053,7 @@
 </head>
 
 <body>
+
     <!-- Header -->
     <header>
         <nav class="container">
@@ -1053,6 +1074,10 @@
         </nav>
     </header>
 
+    <h1 class="visually-hidden">
+        행사 에이전시 담아 | 팝업스토어·프로모션 전문 대행
+    </h1>
+
     <!-- Hero Section with Video Only -->
     <section id="home" class="hero">
         <video class="hero-video" autoplay muted loop playsinline>
@@ -1060,6 +1085,20 @@
             Your browser does not support the video tag.
         </video>
     </section>
+
+    <section class="seo-intro container">
+        <p>
+            담아 에이전시는 서울 마포구에 위치한 행사·프로모션 전문 에이전시로,
+            팝업스토어 운영, 행사 스태프 및 프로모터 섭외, 브랜드 오프라인 이벤트를
+            기획부터 운영까지 원스톱으로 제공합니다.
+        </p>
+        <p>
+            다수의 팝업스토어 및 기업 행사를 성공적으로 운영한 경험을 바탕으로,
+            브랜드 콘셉트에 맞는 전문 인력 구성과 안정적인 현장 운영을 통해
+            실질적인 성과를 만들어내는 행사 에이전시입니다.
+        </p>
+    </section>
+
 
     <!-- Services -->
     <section id="services" class="services">
