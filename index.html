@@ -362,6 +362,14 @@
             color: #1e5166;
         }
 
+        /* Kakao Chat Button - 하단 오른쪽 고정 */
+        #kakao-talk-channel-chat-button {
+            position: fixed !important;
+            bottom: 30px !important;
+            right: 30px !important;
+            z-index: 9999 !important;
+        }
+
         /* 모바일에서 영상이 잘리지 않도록 처리 */
         @media (max-width: 768px) {
             .hero-video {
@@ -369,6 +377,11 @@
                 height: auto;
                 max-height: 80vh;
                 object-fit: contain;
+            }
+
+            #kakao-talk-channel-chat-button {
+                bottom: 20px !important;
+                right: 20px !important;
             }
         }
 
@@ -379,6 +392,11 @@
                 height: auto;
                 max-height: 70vh;
                 object-fit: contain;
+            }
+
+            #kakao-talk-channel-chat-button {
+                bottom: 15px !important;
+                right: 15px !important;
             }
         }
 
@@ -1515,6 +1533,10 @@
         </div>
     </section>
 
+    <!-- Kakao Talk Channel Chat Button -->
+    <div id="kakao-talk-channel-chat-button" data-channel-public-id="_xexluRX" data-title="consult" data-size="small"
+        data-color="yellow" data-shape="pc" data-support-multiple-densities="true"></div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -1598,6 +1620,26 @@
             });
         });
     </script>
+
+    <!-- Kakao Channel Chat Button Script -->
+    <script>
+        window.kakaoAsyncInit = function () {
+            Kakao.Channel.createChatButton({
+                container: '#kakao-talk-channel-chat-button',
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.channel.min.js';
+            js.integrity = 'sha384-8oNFBbAHWVovcMLgR+mLbxqwoucixezSAzniBcjnEoumhfIbMIg4DrVsoiPEtlnt';
+            js.crossOrigin = 'anonymous';
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'kakao-js-sdk');
+    </script>
+
 </body>
 
 </html>
