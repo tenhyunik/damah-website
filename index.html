@@ -1678,8 +1678,8 @@
         }, { passive: true });
     </script>
 
-    <!-- Kakao Channel Chat Button Script (defer로 메인 렌더링 방해 없이 로드) -->
-    <script defer>
+    <!-- Kakao Channel Chat Button Script -->
+    <script>
         window.kakaoAsyncInit = function () {
             Kakao.Channel.createChatButton({
                 container: '#kakao-talk-channel-chat-button',
@@ -1691,7 +1691,6 @@
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
             js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.channel.min.js';
-            js.integrity = 'sha384-8oNFBbAHWVovcMLgR+mglD2v69rBXzFZFfCOBHB6yirQU2KfFRijRHOobqGhm30';
             js.crossOrigin = 'anonymous';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'kakao-channel-sdk'));
