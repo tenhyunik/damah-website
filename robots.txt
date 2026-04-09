@@ -1,5 +1,5 @@
 # robots.txt for agency damah
-# 담아 에이전시 - 프로모션 전문
+# 담아 에이전시 - 서울 No.1 프로모션 전문
 
 User-agent: *
 Allow: /
@@ -16,6 +16,10 @@ User-agent: Googlebot
 Allow: /
 
 User-agent: Googlebot-Image
+Allow: /
+
+# Bing Bot
+User-agent: Bingbot
 Allow: /
 
 # Block admin and private areas (if any)
