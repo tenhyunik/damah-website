@@ -336,6 +336,36 @@
             transition: width 0.3s ease;
         }
 
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 0.4rem;
+            align-items: center;
+            background: #f0f4f6;
+            border-radius: 20px;
+            padding: 0.3rem 0.5rem;
+        }
+
+        .lang-switch a {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #1e5166;
+            text-decoration: none;
+            padding: 0.25rem 0.6rem;
+            border-radius: 15px;
+            transition: all 0.2s;
+        }
+
+        .lang-switch a.active {
+            background: #1e5166;
+            color: #fff;
+        }
+
         .nav-links a:hover::after {
             width: 100%;
         }
@@ -1336,22 +1366,28 @@
                 <span class="logo-main">damah</span>
                 <span class="logo-sub">promotion agency</span>
             </div>
-            <button class="mobile-menu-btn" aria-label="메뉴 열기">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home">홈</a></li>
-                <li><a href="#services">서비스</a></li>
-                <li><a href="#problems">차별화</a></li>
-                <li><a href="#process">프로세스</a></li>
-                <li><a href="#casting">인력구성</a></li>
-                <li><a href="#portfolio">포트폴리오</a></li>
-                <li><a href="#organization">조직도</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">연락처</a></li>
-            </ul>
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <a href="/" class="active">KO</a>
+                    <a href="/en.html">EN</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#services">서비스</a></li>
+                    <li><a href="#problems">차별화</a></li>
+                    <li><a href="#process">프로세스</a></li>
+                    <li><a href="#casting">인력구성</a></li>
+                    <li><a href="#portfolio">포트폴리오</a></li>
+                    <li><a href="#organization">조직도</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 

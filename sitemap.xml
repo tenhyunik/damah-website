@@ -7,7 +7,7 @@
     <!-- 홈페이지 -->
     <url>
         <loc>https://www.agencydamah.com/</loc>
-        <lastmod>2026-04-09</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -15,7 +15,7 @@
     <!-- 서비스 페이지 -->
     <url>
         <loc>https://www.agencydamah.com/#services</loc>
-        <lastmod>2026-04-09</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -23,7 +23,7 @@
     <!-- 차별화 페이지 -->
     <url>
         <loc>https://www.agencydamah.com/#problems</loc>
-        <lastmod>2026-04-09</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -31,7 +31,7 @@
     <!-- 프로세스 페이지 -->
     <url>
         <loc>https://www.agencydamah.com/#process</loc>
-        <lastmod>2026-04-09</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -39,7 +39,7 @@
     <!-- 인력구성 페이지 -->
     <url>
         <loc>https://www.agencydamah.com/#casting</loc>
-        <lastmod>2026-04-09</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -47,7 +47,7 @@
     <!-- 포트폴리오 페이지 -->
     <url>
         <loc>https://www.agencydamah.com/#portfolio</loc>
-        <lastmod>2026-04-09</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -55,17 +55,65 @@
     <!-- 조직도 페이지 -->
     <url>
         <loc>https://www.agencydamah.com/#organization</loc>
-        <lastmod>2026-04-09</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+
+    <!-- FAQ 페이지 -->
+    <url>
+        <loc>https://www.agencydamah.com/#faq</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     <!-- 연락처 페이지 -->
     <url>
         <loc>https://www.agencydamah.com/#contact</loc>
-        <lastmod>2026-04-09</lastmod>
+        <lastmod>2026-04-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
+    </url>
+
+    <!-- 영문 홈페이지 -->
+    <url>
+        <loc>https://www.agencydamah.com/en.html</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 영문 서비스 -->
+    <url>
+        <loc>https://www.agencydamah.com/en.html#services</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 영문 포트폴리오 -->
+    <url>
+        <loc>https://www.agencydamah.com/en.html#portfolio</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 영문 FAQ -->
+    <url>
+        <loc>https://www.agencydamah.com/en.html#faq</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 영문 연락처 -->
+    <url>
+        <loc>https://www.agencydamah.com/en.html#contact</loc>
+        <lastmod>2026-04-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
