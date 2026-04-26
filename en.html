@@ -514,66 +514,217 @@
             font-weight: 700;
         }
 
-        /* Problems */
+        /* Strength Cards */
         .problems {
             background: #f8f9fa;
         }
 
-        .problem-solution-grid {
+        .strength-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 4rem;
+            gap: 2rem;
             margin-top: 3rem;
         }
 
-        .problem-box,
-        .solution-box {
+        .strength-card {
             background: #fff;
-            padding: 3rem;
+            padding: 3rem 2.5rem;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 8px 30px rgba(30, 81, 102, 0.08);
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
         }
 
-        .problem-box h3,
-        .solution-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-            color: #1e5166;
+        .strength-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(30, 81, 102, 0.15);
+            border-bottom-color: #1e5166;
+        }
+
+        .strength-icon {
+            width: 70px;
+            height: 70px;
+            min-width: 70px;
+            background: linear-gradient(135deg, #1e5166, #2d7a94);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(30, 81, 102, 0.25);
+        }
+
+        .strength-content h4 {
+            font-size: 1.3rem;
             font-weight: 700;
-            text-align: center;
-        }
-
-        .problem-box {
-            border-left: 5px solid #cd717a;
-        }
-
-        .solution-box {
-            border-left: 5px solid #557ac3;
-        }
-
-        .issue-item,
-        .solution-item {
-            padding: 2rem;
-            background: #f8f9fa;
-            border-radius: 15px;
-            margin-bottom: 1.5rem;
-        }
-
-        .issue-item h4,
-        .solution-item h4 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
             color: #1e5166;
-            font-weight: 700;
+            margin-bottom: 0.8rem;
         }
 
-        .issue-item p,
-        .solution-item p {
+        .strength-content p {
             color: #1e5166;
             line-height: 1.8;
+            font-size: 1rem;
+            opacity: 0.85;
         }
 
-        /* Process */
+        .strength-tag {
+            display: inline-block;
+            margin-top: 0.8rem;
+            padding: 0.3rem 0.9rem;
+            background: #eef4f7;
+            color: #1e5166;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Team Cards */
+        .org-chart {
+            background: #f8f9fa;
+        }
+
+        .team-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.05rem;
+            color: #1e5166;
+            line-height: 1.9;
+            opacity: 0.85;
+        }
+
+        .team-lead-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .team-lead-card {
+            background: linear-gradient(135deg, #1e5166, #2d7a94);
+            color: #fff;
+            border-radius: 20px;
+            padding: 2.5rem 3.5rem;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(30, 81, 102, 0.3);
+            min-width: 280px;
+        }
+
+        .team-lead-card .tl-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            margin: 0 auto 1.2rem;
+        }
+
+        .team-lead-card h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 0.4rem;
+        }
+
+        .team-lead-card .tl-role {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .team-lead-card .tl-desc {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.7;
+        }
+
+        .team-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .team-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(30, 81, 102, 0.08);
+            transition: all 0.3s ease;
+            border-top: 5px solid #1e5166;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(30, 81, 102, 0.15);
+        }
+
+        .team-card-icon {
+            width: 75px;
+            height: 75px;
+            background: #eef4f7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #1e5166;
+            margin: 0 auto 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover .team-card-icon {
+            background: #1e5166;
+            color: #fff;
+        }
+
+        .team-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1e5166;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-card .tc-stat {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #2d7a94;
+            margin-bottom: 0.8rem;
+        }
+
+        .team-card ul {
+            list-style: none;
+            text-align: left;
+            margin-top: 1rem;
+        }
+
+        .team-card li {
+            padding: 0.5rem 0;
+            color: #1e5166;
+            font-size: 0.92rem;
+            border-bottom: 1px solid #f0f4f6;
+            padding-left: 1.2rem;
+            position: relative;
+            opacity: 0.85;
+        }
+
+        .team-card li::before {
+            content: '·';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: #1e5166;
+        }
+
         .process {
             background: #fff;
         }
@@ -1200,56 +1351,54 @@
         </div>
     </section>
 
-    <!-- Problems & Solutions -->
+    <!-- Strengths -->
     <section id="difference" class="problems">
         <div class="container">
             <h2 class="section-title fade-in">Why Agency Damah</h2>
-            <p class="section-subtitle fade-in">PROBLEMS & SOLUTIONS</p>
-            <div class="problem-solution-grid">
-                <div class="problem-box fade-in">
-                    <h3>Industry Pain Points</h3>
-                    <div class="issue-item">
-                        <h4>Inflated Quotes</h4>
-                        <p>Many agencies over-charge clients with bloated pricing driven by profit margins rather than
-                            actual event needs.</p>
+            <p class="section-subtitle fade-in">OUR STRENGTHS</p>
+            <div class="strength-grid">
+                <div class="strength-card fade-in">
+                    <div class="strength-icon">
+                        <i class="fas fa-coins" aria-hidden="true"></i>
                     </div>
-                    <div class="issue-item">
-                        <h4>Unvetted Staff</h4>
-                        <p>Generic, untrained personnel dispatched without understanding the brand or event objectives —
-                            no screening, no education.</p>
-                    </div>
-                    <div class="issue-item">
-                        <h4>Lack of Field Experience</h4>
-                        <p>Agencies without genuine on-site experience fail to anticipate problems, leading to poor
-                            execution and low event quality.</p>
-                    </div>
-                    <div class="issue-item">
-                        <h4>Poor Communication</h4>
-                        <p>Absent account managers and slow response times leave clients without support when issues
-                            arise on-site.</p>
+                    <div class="strength-content">
+                        <h4>Transparent, Budget-Fit Pricing</h4>
+                        <p>No inflated margins. We work within your budget to build the right team for your event —
+                            maximizing impact without unnecessary cost.</p>
+                        <span class="strength-tag">Clear Quotation</span>
                     </div>
                 </div>
-                <div class="solution-box fade-in">
-                    <h3>The Damah Difference</h3>
-                    <div class="solution-item">
-                        <h4>Transparent, Budget-Fit Pricing</h4>
-                        <p>We work within your budget to deploy the right people in the right roles — maximum impact,
-                            minimum waste.</p>
+                <div class="strength-card fade-in">
+                    <div class="strength-icon">
+                        <i class="fas fa-user-check" aria-hidden="true"></i>
                     </div>
-                    <div class="solution-item">
-                        <h4>Brand-Educated Staff</h4>
-                        <p>All personnel undergo our internal training program plus dedicated brand briefings before
-                            every event.</p>
+                    <div class="strength-content">
+                        <h4>Vetted, Brand-Educated Staff</h4>
+                        <p>Every team member is selected from our 5,000+ promoter database and goes through internal
+                            training plus brand-specific briefings before deployment.</p>
+                        <span class="strength-tag">In-house Training System</span>
                     </div>
-                    <div class="solution-item">
-                        <h4>3,500+ Events of Experience</h4>
-                        <p>Popup stores, flagship stores, trade fairs, sales events — our team brings deep,
-                            category-specific expertise from 3,500+ real events.</p>
+                </div>
+                <div class="strength-card fade-in">
+                    <div class="strength-icon">
+                        <i class="fas fa-award" aria-hidden="true"></i>
                     </div>
-                    <div class="solution-item">
-                        <h4>Dedicated On-site Management</h4>
-                        <p>Our lead manager is present throughout every project, ensuring real-time communication and
-                            immediate issue resolution.</p>
+                    <div class="strength-content">
+                        <h4>3,500+ Events of Real Experience</h4>
+                        <p>From K-beauty popups in Seongsu to trade fairs at KINTEX — our hands-on experience across
+                            3,500+ diverse events means we're ready for anything.</p>
+                        <span class="strength-tag">Multi-category Expertise</span>
+                    </div>
+                </div>
+                <div class="strength-card fade-in">
+                    <div class="strength-icon">
+                        <i class="fas fa-headset" aria-hidden="true"></i>
+                    </div>
+                    <div class="strength-content">
+                        <h4>Dedicated On-site Leadership</h4>
+                        <p>Our lead manager is physically present at every event — managing attendance, resolving issues
+                            in real time, and keeping you informed from start to finish.</p>
+                        <span class="strength-tag">Lead Manager On-site</span>
                     </div>
                 </div>
             </div>
@@ -1417,38 +1566,64 @@
         </div>
     </section>
 
-    <!-- Organization -->
+    <!-- Team -->
     <section id="organization" class="org-chart">
         <div class="container">
-            <h2 class="section-title fade-in">Company Structure</h2>
-            <p class="section-subtitle fade-in">COMPANY ORGANIZATION</p>
-            <div class="chart-container fade-in">
-                <div class="chart-ceo">
-                    <div class="chart-node">CEO</div>
+            <h2 class="section-title fade-in">Meet the Team</h2>
+            <p class="section-subtitle fade-in">WHO WE ARE</p>
+            <p class="team-intro fade-in">
+                Agency Damah is built on real field experience. Every member of our team has been personally vetted and
+                trained — led by a director who has managed over 3,500 events firsthand.
+            </p>
+            <div class="team-lead-wrap">
+                <div class="team-lead-card fade-in">
+                    <div class="tl-icon">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="tl-role">Lead Director · CEO</p>
+                    <p class="tl-desc">Promotion specialist with hands-on experience across<br>3,500+ popup stores,
+                        flagship stores, trade fairs,<br>and brand activation events across Korea</p>
                 </div>
-                <div class="chart-departments">
-                    <div class="department">
-                        <div class="department-head">AGENCY</div>
-                        <ul class="department-list">
-                            <li>Professional Promoters</li>
-                            <li>Staff Outsourcing</li>
-                        </ul>
+            </div>
+            <div class="team-cards-grid">
+                <div class="team-card fade-in">
+                    <div class="team-card-icon">
+                        <i class="fas fa-users" aria-hidden="true"></i>
                     </div>
-                    <div class="department">
-                        <div class="department-head">BTL Division</div>
-                        <ul class="department-list">
-                            <li>Popup Stores</li>
-                            <li>Promotions</li>
-                            <li>Event Stores</li>
-                        </ul>
+                    <h3>Promoter Team</h3>
+                    <div class="tc-stat">5,000+ DB</div>
+                    <ul>
+                        <li>5+ years professional experience</li>
+                        <li>Models & actors in our talent pool</li>
+                        <li>Hand-picked per brand & event</li>
+                        <li>Brand education before every event</li>
+                    </ul>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-card-icon">
+                        <i class="fas fa-shield-alt" aria-hidden="true"></i>
                     </div>
-                    <div class="department">
-                        <div class="department-head">SPECIAL</div>
-                        <ul class="department-list">
-                            <li>Interpretation</li>
-                            <li>Photography / Film</li>
-                        </ul>
+                    <h3>Supervisor Team</h3>
+                    <div class="tc-stat">5yrs+ Avg.</div>
+                    <ul>
+                        <li>Full on-site operations management</li>
+                        <li>Real-time issue resolution</li>
+                        <li>Direct client communication</li>
+                        <li>Brand direction alignment</li>
+                    </ul>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-card-icon">
+                        <i class="fas fa-user-friends" aria-hidden="true"></i>
                     </div>
+                    <h3>Event Staff</h3>
+                    <div class="tc-stat">1,000+ DB</div>
+                    <ul>
+                        <li>Proven multi-event experience</li>
+                        <li>Zero no-shows guaranteed</li>
+                        <li>Backup coverage always on standby</li>
+                        <li>Real-time attendance tracking</li>
+                    </ul>
                 </div>
             </div>
         </div>
